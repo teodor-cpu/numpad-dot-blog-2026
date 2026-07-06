@@ -1,0 +1,40 @@
+<h1>Точка вместо запетая при натискане на Del / Decimal бутона от NumPad</h1>
+
+<p>Ако при българска клавиатура бутонът Del / Decimal от NumPad пише <code>,</code> вместо <code>.</code>, най-лесното решение през 2026 г. е малък registry remap.</p>
+
+<p>Това решение не иска допълнителна програма, не пуска скрипт при startup и работи на системно ниво.</p>
+
+<p><strong>Важно:</strong> промяната е глобална за всички клавиатурни подредби и изисква рестарт на Windows.</p>
+
+<h2>Изтегляне</h2>
+
+<ul>
+  <li><a href="https://github.com/teodor-cpu/numpad-dot-blog-2026/releases/download/v1.0.0/numpad-decimal-dot-enable.reg">Включване: numpad-decimal-dot-enable.reg</a></li>
+  <li><a href="https://github.com/teodor-cpu/numpad-dot-blog-2026/releases/download/v1.0.0/numpad-decimal-dot-disable.reg">Връщане назад: numpad-decimal-dot-disable.reg</a></li>
+  <li><a href="https://github.com/teodor-cpu/numpad-dot-blog-2026/releases/download/v1.0.0/numpad-dot-blog-2026.zip">Целият пакет: numpad-dot-blog-2026.zip</a></li>
+</ul>
+
+<h2>Как се прави</h2>
+
+<ol>
+  <li>Свалете <a href="https://github.com/teodor-cpu/numpad-dot-blog-2026/releases/download/v1.0.0/numpad-decimal-dot-enable.reg">numpad-decimal-dot-enable.reg</a>.</li>
+  <li>Стартирайте файла с двоен клик.</li>
+  <li>Потвърдете предупреждението на Windows.</li>
+  <li>Рестартирайте компютъра.</li>
+</ol>
+
+<p>След рестарта бутонът Decimal / Del от NumPad ще пише точка.</p>
+
+<h2>Ако искате да върнете старото поведение</h2>
+
+<ol>
+  <li>Свалете <a href="https://github.com/teodor-cpu/numpad-dot-blog-2026/releases/download/v1.0.0/numpad-decimal-dot-disable.reg">numpad-decimal-dot-disable.reg</a>.</li>
+  <li>Стартирайте файла.</li>
+  <li>Рестартирайте Windows.</li>
+</ol>
+
+<h2>Важно уточнение</h2>
+
+<p>Смяната на decimal separator в Regional settings не решава надеждно проблема при стандартните български Windows keyboard layouts. Там поведението на NumPad Decimal обикновено идва от самата клавиатурна подредба.</p>
+
+<p>Ако искате промяната да важи само за една конкретна българска подредба, тогава трябва custom keyboard layout. За повечето хора обаче <code>.reg</code> вариантът е по-простият и практичен избор.</p>
